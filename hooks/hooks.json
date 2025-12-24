@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "You just modified a file. Consider:\n1. Does this change require updating related tests?\n2. Does documentation need to be updated?\n3. Are there any breaking changes that should be noted?\n\nIf yes to any, proactively mention them to the user."
+          }
+        ]
+      }
+    ],
+    "PrePromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Remember to:\n- Read files before editing them\n- Use specific, descriptive commit messages\n- Follow the project's existing code style\n- Test changes when appropriate"
+          }
+        ]
+      }
+    ]
+  }
+}
