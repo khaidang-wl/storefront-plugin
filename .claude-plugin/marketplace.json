@@ -1,0 +1,27 @@
+{
+  "name": "my-team-plugins",
+  "owner": {
+    "name": "Your Team Name",
+    "email": "team@yourcompany.com"
+  },
+  "metadata": {
+    "description": "Custom plugins for our team",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "storefront-plugin",
+      "source": "./plugins/storefront-plugin",
+      "description": "A simple example plugin demonstrating Claude Code plugin features",
+      "version": "1.0.0",
+      "author": {
+        "name": "Example Author",
+        "email": "author@example.com"
+      },
+      "category": "development",
+      "tags": ["example", "demo", "tutorial"],
+      "license": "MIT"
+    }
+  ]
+}
