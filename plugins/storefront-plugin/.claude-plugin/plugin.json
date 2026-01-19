@@ -10,6 +10,4 @@
   "repository": "https://github.com/example/example-plugin",
   "license": "MIT",
   "keywords": ["example", "demo", "tutorial"],
-  "commands": "./commands/",
-  "agents": "./agents/"
 }
